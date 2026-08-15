@@ -149,7 +149,7 @@ header.scrolled{padding:.46rem 0;background:rgba(0,18,41,.86);backdrop-filter:bl
 .kpi span{display:block;margin-top:.42rem;color:var(--text-muted);font-size:.75rem}
 
 /* HERO PHOTO CARD */
-.hero-card{position:relative;max-width:430px;justify-self:center}
+.hero-card{position:relative;width:100%;max-width:430px;justify-self:center}
 .hero-photo{
   position:relative;overflow:hidden;min-height:500px;border-radius:22px;
   display:flex;align-items:center;justify-content:center;
@@ -158,7 +158,9 @@ header.scrolled{padding:.46rem 0;background:rgba(0,18,41,.86);backdrop-filter:bl
 }
 .hero-photo img{
   position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 16%;
-  filter:saturate(1.02) contrast(1.02)
+  filter:saturate(1.02) contrast(1.02);
+  -webkit-mask-image:radial-gradient(ellipse 94% 96% at 50% 40%,#000 66%,transparent 100%);
+  mask-image:radial-gradient(ellipse 94% 96% at 50% 40%,#000 66%,transparent 100%)
 }
 .hero-photo:after{
   content:"";position:absolute;inset:0;pointer-events:none;
