@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Salatiel Saucedo Chacón — Ingeniero Sanitario. Planeamiento estratégico, gestión de proyectos, agua potable, saneamiento e inversión.">
+<meta name="description" content="Salatiel Saucedo Chacón — Ingeniero Sanitario especializado en planificación y regulación sectorial, agua potable, saneamiento, drenaje pluvial, inversión pública, control de proyectos y análisis de datos.">
 <meta name="theme-color" content="#001C29">
-<title>Salatiel Saucedo | Ingeniería, estrategia e impacto</title>
+<title>Salatiel Saucedo | Agua, saneamiento, política pública y datos</title>
 
 <style>
 :root{
@@ -247,6 +247,29 @@ header.scrolled{padding:.58rem 0;background:rgba(0,10,31,.82);backdrop-filter:bl
 .method h3{margin:.45rem 0}
 .method p{font-size:.88rem}
 
+
+/* TRAYECTORIA Y FORMACIÓN */
+.timeline{position:relative;display:grid;gap:1rem;max-width:1000px;margin-inline:auto}
+.timeline:before{content:"";position:absolute;left:19px;top:10px;bottom:10px;width:1px;background:linear-gradient(var(--cyan-primary),rgba(79,195,220,.12))}
+.timeline-item{position:relative;padding:1.15rem 1.2rem 1.15rem 3.6rem;border-radius:20px;border:1px solid rgba(66,187,213,.14);background:linear-gradient(135deg,rgba(7,26,51,.92),rgba(0,20,48,.88));box-shadow:var(--soft)}
+.timeline-item:before{content:"";position:absolute;left:12px;top:1.4rem;width:15px;aspect-ratio:1;border-radius:50%;background:var(--cyan-light);box-shadow:0 0 0 6px rgba(79,195,220,.12)}
+.timeline-item .when{display:block;color:var(--cyan-light);font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.timeline-item h3{margin:.3rem 0 .35rem}
+.timeline-item p{font-size:.88rem}
+.timeline-item .tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.75rem}
+.timeline-item .tags span,.edu-tags span{padding:.34rem .58rem;border-radius:999px;border:1px solid rgba(66,187,213,.16);background:rgba(66,187,213,.06);color:var(--text-muted);font-size:.68rem;font-weight:750}
+
+.education-grid{display:grid;gap:1rem}
+.edu-card{padding:1.35rem;border-radius:22px;border:1px solid rgba(66,187,213,.14);background:linear-gradient(135deg,rgba(7,26,51,.92),rgba(0,20,48,.88));box-shadow:var(--soft)}
+.edu-card .uni{color:var(--cyan-light);font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+.edu-card h3{margin:.45rem 0}
+.edu-card p{font-size:.86rem}
+.edu-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+
+@media(min-width:760px){
+  .education-grid{grid-template-columns:repeat(2,1fr)}
+}
+
 /* CONTACT */
 .contact{padding-top:2rem}
 .contact-shell{display:grid;overflow:hidden;border-radius:var(--r1);background:linear-gradient(145deg,var(--bg-primary),var(--bg-secondary) 60%,var(--bg-card));border:1px solid rgba(66,187,213,.16);box-shadow:var(--shadow)}
@@ -391,9 +414,9 @@ footer{padding:2.5rem 0 1.5rem}
 <header id="header">
   <div class="container">
     <nav class="nav">
-      <a class="brand" href="#inicio"><span class="mark">SS</span><span>Salatiel Saucedo<small>Ingeniería · Estrategia · Impacto</small></span></a>
+      <a class="brand" href="#inicio"><span class="mark">SS</span><span>Salatiel Saucedo<small>Ingeniería · Política pública · Datos</small></span></a>
       <div class="navlinks" id="navlinks">
-        <a class="active" href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#perfil">Perfil</a><a href="#metodologia">Metodología</a><a href="#contacto">Contacto</a>
+        <a class="active" href="#inicio">Inicio</a><a href="#servicios">Experiencia</a><a href="#trayectoria">Trayectoria</a><a href="#perfil">Datos</a><a href="#formacion">Formación</a><a href="#contacto">Contacto</a>
       </div>
       <a class="btn btn-glass navcta" href="#contacto">Conversemos</a>
       <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
@@ -405,18 +428,18 @@ footer{padding:2.5rem 0 1.5rem}
 <section class="hero" id="inicio">
   <div class="container hero-grid">
     <div class="hero-copy reveal visible">
-      <span class="eyebrow">Ingeniería sanitaria · Gestión pública</span>
-      <h1>Ingeniería que transforma <span>decisiones en impacto.</span></h1>
-      <p>Planeamiento estratégico, gestión de proyectos e inversiones en agua potable y saneamiento, integrando evidencia, regulación y herramientas digitales para resolver desafíos complejos.</p>
+      <span class="eyebrow">Ingeniería sanitaria · Planificación sectorial · Gestión pública</span>
+      <h1>Agua y saneamiento con <span>visión estratégica.</span></h1>
+      <p>Experiencia en planificación y regulación sectorial, inversión pública, control y seguimiento de proyectos de agua potable, saneamiento y drenaje pluvial, integrando evidencia, gestión pública y herramientas digitales.</p>
       <div class="hero-actions">
-        <a class="btn btn-white" href="#servicios">Explorar servicios →</a>
+        <a class="btn btn-white" href="#trayectoria">Ver trayectoria →</a>
         <a class="btn btn-glass" href="#perfil">Conocer mi perfil</a>
       </div>
       <div class="kpis">
-        <div class="kpi"><strong>15+</strong><span>Años de experiencia</span></div>
-        <div class="kpi"><strong>APS</strong><span>Agua y saneamiento</span></div>
-        <div class="kpi"><strong>360°</strong><span>Visión técnica y pública</span></div>
-        <div class="kpi"><strong>Data</strong><span>Decisiones con evidencia</span></div>
+        <div class="kpi"><strong>14+</strong><span>Años de experiencia profesional</span></div>
+        <div class="kpi"><strong>APS</strong><span>Agua potable y saneamiento</span></div>
+        <div class="kpi"><strong>12</strong><span>Regiones evaluadas en planificación sectorial</span></div>
+        <div class="kpi"><strong>Data</strong><span>Análisis y visualización para decisiones</span></div>
       </div>
     </div>
 
@@ -426,7 +449,7 @@ footer{padding:2.5rem 0 1.5rem}
         <span class="available">● Disponible para consultas</span>
         <div class="profile">
           <strong>Salatiel Saucedo Chacón</strong>
-          <span>Ingeniero Sanitario · Planeamiento y gestión de proyectos</span>
+          <span>Ingeniero Sanitario · Planificación sectorial · Inversión y proyectos</span>
         </div>
       </div>
     </aside>
@@ -436,22 +459,61 @@ footer{padding:2.5rem 0 1.5rem}
 <div class="strip">
   <div class="container">
     <div class="strip-grid reveal">
-      <div class="strip-item"><strong>Planeamiento estratégico</strong><span>Políticas, planes, metas e indicadores.</span></div>
-      <div class="strip-item"><strong>Gestión de proyectos</strong><span>Programación, riesgos y resultados.</span></div>
-      <div class="strip-item"><strong>Agua y saneamiento</strong><span>Servicios, regulación y sostenibilidad.</span></div>
-      <div class="strip-item"><strong>Transformación digital</strong><span>Datos, automatización y visualización.</span></div>
+      <div class="strip-item"><strong>Planificación y regulación</strong><span>Planes, normas e instrumentos sectoriales.</span></div>
+      <div class="strip-item"><strong>Inversión y proyectos</strong><span>Programación, seguimiento, riesgos y control.</span></div>
+      <div class="strip-item"><strong>Agua, saneamiento y drenaje</strong><span>Brechas, prestación, sostenibilidad y territorio.</span></div>
+      <div class="strip-item"><strong>Datos para decisiones</strong><span>Análisis, dashboards y visualización territorial.</span></div>
     </div>
   </div>
 </div>
 
 <section class="section" id="servicios">
   <div class="container">
-    <div class="head reveal"><span class="eyebrow">Servicios especializados</span><h2>Experiencia técnica para decisiones de alto impacto.</h2><p>Soluciones para organizaciones y equipos que necesitan rigor técnico, claridad ejecutiva y una ruta viable de implementación.</p></div>
+    <div class="head reveal"><span class="eyebrow">Áreas de experiencia</span><h2>Del diseño de política a la ejecución de infraestructura.</h2><p>Trayectoria desarrollada en el sector público y privado, articulando planificación sectorial, regulación, inversiones, control de proyectos y gestión de servicios de agua y saneamiento.</p></div>
     <div class="services">
-      <article class="service featured reveal"><div class="icon">💧</div><h3>Agua potable y saneamiento</h3><p>Diagnóstico, planificación, regulación, indicadores, cierre de brechas, calidad y sostenibilidad de los servicios.</p><a class="slink" href="#contacto">Solicitar asesoría →</a></article>
-      <article class="service reveal"><div class="icon">◫</div><h3>Planeamiento y políticas</h3><p>Diseño, articulación, implementación, seguimiento y evaluación de planes, políticas e instrumentos sectoriales.</p><a class="slink" href="#contacto">Conocer el servicio →</a></article>
-      <article class="service reveal"><div class="icon">▤</div><h3>Proyectos de inversión</h3><p>Evaluación, programación, priorización, análisis de riesgos, cronogramas, carteras de inversión y seguimiento.</p><a class="slink" href="#contacto">Evaluar un proyecto →</a></article>
-      <article class="service reveal"><div class="icon">⌁</div><h3>Datos y transformación digital</h3><p>Dashboards, automatización, análisis estadístico, visualización e inteligencia de datos aplicada a la gestión.</p><a class="slink" href="#contacto">Impulsar una solución →</a></article>
+      <article class="service featured reveal"><div class="icon">💧</div><h3>Planificación y regulación sectorial</h3><p>Formulación, revisión y seguimiento de planes, normas, directivas e instrumentos técnicos en agua potable, saneamiento y drenaje pluvial.</p><a class="slink" href="#trayectoria">Ver experiencia →</a></article>
+      <article class="service reveal"><div class="icon">▤</div><h3>Inversión pública y proyectos</h3><p>Formulación, evaluación, priorización y seguimiento físico-financiero de inversiones, carteras y proyectos de infraestructura de saneamiento.</p><a class="slink" href="#trayectoria">Ver trayectoria →</a></article>
+      <article class="service reveal"><div class="icon">◎</div><h3>Control y gestión de proyectos</h3><p>Experiencia en expedientes técnicos, ejecución, control concurrente, programación, riesgos, avance físico-financiero y liquidación de obras.</p><a class="slink" href="#trayectoria">Conocer experiencia →</a></article>
+      <article class="service reveal"><div class="icon">⌁</div><h3>Datos y gestión territorial</h3><p>Análisis de brechas, indicadores, dashboards y visualización de información para apoyar decisiones sectoriales y seguimiento de resultados.</p><a class="slink" href="#perfil">Ver enfoque de datos →</a></article>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="trayectoria">
+  <div class="container">
+    <div class="head center reveal"><span class="eyebrow">Trayectoria profesional</span><h2>Experiencia a lo largo del ciclo de la inversión.</h2><p>Desde la formulación y ejecución de proyectos hasta el control, seguimiento de inversiones y planificación sectorial.</p></div>
+    <div class="timeline">
+      <article class="timeline-item reveal">
+        <span class="when">2025 · Actualidad</span>
+        <h3>MVCS · Coordinación en saneamiento y drenaje pluvial</h3>
+        <p>Planificación y regulación sectorial, formulación y seguimiento de planes, normas e instrumentos técnicos, así como articulación y asistencia técnica para fortalecer la prestación de los servicios.</p>
+        <div class="tags"><span>Planificación</span><span>Regulación</span><span>Agua y saneamiento</span><span>Drenaje pluvial</span></div>
+      </article>
+      <article class="timeline-item reveal">
+        <span class="when">2025</span>
+        <h3>OTASS · Monitoreo de proyectos e IOARR en EPS</h3>
+        <p>Seguimiento de ejecución física y financiera de inversiones, análisis de brechas, alertas y cumplimiento de metas en empresas prestadoras.</p>
+        <div class="tags"><span>EPS</span><span>Inversiones</span><span>Monitoreo</span><span>Brechas</span></div>
+      </article>
+      <article class="timeline-item reveal">
+        <span class="when">2024 · 2025</span>
+        <h3>Contraloría General de la República · Megaproyectos</h3>
+        <p>Control concurrente de megaproyectos y supervisión técnica de expedientes, ejecución y liquidación de obras.</p>
+        <div class="tags"><span>Control concurrente</span><span>Megaproyectos</span><span>Obras</span><span>Riesgos</span></div>
+      </article>
+      <article class="timeline-item reveal">
+        <span class="when">2020 · 2021</span>
+        <h3>MVCS · Planificación nacional y regional de saneamiento</h3>
+        <p>Participación en la elaboración del Plan Nacional de Saneamiento y evaluación de inversiones priorizadas en Planes Regionales de Saneamiento.</p>
+        <div class="tags"><span>Plan Nacional</span><span>Planes Regionales</span><span>Inversiones</span><span>Asistencia técnica</span></div>
+      </article>
+      <article class="timeline-item reveal">
+        <span class="when">2012 · 2020</span>
+        <h3>Formulación, estudios y ejecución de proyectos</h3>
+        <p>Experiencia en formulación y evaluación de proyectos, modelamiento hidráulico, metrados, programación, oficina técnica y seguimiento físico-financiero de obras de saneamiento.</p>
+        <div class="tags"><span>Expedientes técnicos</span><span>Modelamiento hidráulico</span><span>Programación</span><span>Ejecución</span></div>
+      </article>
     </div>
   </div>
 </section>
@@ -459,26 +521,26 @@ footer{padding:2.5rem 0 1.5rem}
 <section class="section exec" id="perfil">
   <div class="container exec-grid">
     <div class="exec-copy reveal">
-      <span class="eyebrow">Perfil ejecutivo</span>
-      <h2>Ingeniería con visión estratégica.</h2>
-      <p>Integro conocimiento técnico, planeamiento, inversión y análisis de datos para convertir información compleja en decisiones comprensibles, trazables y orientadas a resultados.</p>
+      <span class="eyebrow">Perfil profesional</span>
+      <h2>Visión técnica, sectorial y basada en evidencia.</h2>
+      <p>Integro ingeniería sanitaria, gestión pública, planificación, regulación, inversión y analítica para abordar los desafíos del agua potable y saneamiento desde una perspectiva integral.</p>
       <div class="caplist">
-        <div class="cap"><i>✓</i><div><strong>Diagnóstico integral</strong><span>Brechas, riesgos, restricciones y oportunidades.</span></div></div>
-        <div class="cap"><i>✓</i><div><strong>Diseño de instrumentos</strong><span>Hojas de ruta, matrices, indicadores y cronogramas.</span></div></div>
-        <div class="cap"><i>✓</i><div><strong>Comunicación ejecutiva</strong><span>Resultados claros para equipos técnicos y directivos.</span></div></div>
+        <div class="cap"><i>✓</i><div><strong>Planificación y regulación sectorial</strong><span>Planes, normas, instrumentos técnicos y seguimiento sectorial.</span></div></div>
+        <div class="cap"><i>✓</i><div><strong>Gestión de inversiones y proyectos</strong><span>Formulación, programación, monitoreo, control y análisis de riesgos.</span></div></div>
+        <div class="cap"><i>✓</i><div><strong>Articulación y asistencia técnica</strong><span>Trabajo con prestadores, equipos técnicos y actores del sector para fortalecer la gestión de servicios.</span></div></div>
       </div>
     </div>
 
     <a class="panel reveal" href="http://bit.ly/4nH72Zs" target="_blank" rel="noopener" aria-label="Abrir el dashboard interactivo de Power BI en una nueva pestaña">
-      <div class="panel-top"><strong>Executive Water & Sanitation Intelligence</strong><span>Decision cockpit</span></div>
+      <div class="panel-top"><strong>Water & Sanitation Intelligence</strong><span>Dashboard interactivo</span></div>
       <div class="metrics">
-        <div class="metric"><strong>92%</strong><span>Avance de metas</span></div>
-        <div class="metric"><strong>24</strong><span>Indicadores clave</span></div>
-        <div class="metric"><strong>08</strong><span>Líneas de acción</span></div>
-        <div class="metric"><strong>360°</strong><span>Seguimiento integral</span></div>
+        <div class="metric"><strong>APS</strong><span>Acceso y brechas</span></div>
+        <div class="metric"><strong>NAC</strong><span>Lectura nacional</span></div>
+        <div class="metric"><strong>U/R</strong><span>Ámbito urbano y rural</span></div>
+        <div class="metric"><strong>Data</strong><span>Análisis territorial</span></div>
       </div>
       <div class="chart"><svg viewBox="0 0 600 180" preserveAspectRatio="none"><path d="M0 150 C70 135,95 120,145 128 S240 90,295 102 S385 55,440 70 S520 34,600 24" fill="none" stroke="#62DFCC" stroke-width="4"/></svg></div>
-      <div class="minirow"><div class="mini"><strong>Política</strong><span>Alineamiento</span></div><div class="mini"><strong>Inversión</strong><span>Priorización</span></div><div class="mini"><strong>Datos</strong><span>Seguimiento</span></div></div>
+      <div class="minirow"><div class="mini"><strong>Cobertura</strong><span>Acceso</span></div><div class="mini"><strong>Brecha</strong><span>Población</span></div><div class="mini"><strong>Territorio</strong><span>Comparación</span></div></div>
       <span class="panel-cta">Ver dashboard interactivo en Power BI
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
       </span>
@@ -486,9 +548,42 @@ footer{padding:2.5rem 0 1.5rem}
   </div>
 </section>
 
+
+<section class="section" id="formacion">
+  <div class="container">
+    <div class="head reveal"><span class="eyebrow">Formación</span><h2>Base técnica y gestión pública.</h2><p>Formación en ingeniería sanitaria y proyectos de inversión, complementada con estudios en regulación, políticas públicas, contratación, control y gestión de proyectos.</p></div>
+    <div class="education-grid">
+      <article class="edu-card reveal">
+        <span class="uni">Universidad Nacional de Ingeniería</span>
+        <h3>Ingeniería Sanitaria</h3>
+        <p>Formación profesional en sistemas de agua potable, alcantarillado, tratamiento y gestión de infraestructura sanitaria.</p>
+        <div class="edu-tags"><span>Título profesional</span><span>Ingeniería</span><span>Saneamiento</span></div>
+      </article>
+      <article class="edu-card reveal">
+        <span class="uni">Universidad Nacional de Ingeniería</span>
+        <h3>Maestría en Ciencias · Proyectos de Inversión</h3>
+        <p>Estudios orientados a formulación, evaluación, gestión y toma de decisiones en proyectos de inversión.</p>
+        <div class="edu-tags"><span>Egresado</span><span>Inversión pública</span><span>Evaluación</span></div>
+      </article>
+      <article class="edu-card reveal">
+        <span class="uni">Especialización profesional</span>
+        <h3>Regulación, políticas públicas y saneamiento</h3>
+        <p>Especializaciones vinculadas con regulación y gestión de servicios de agua y saneamiento, diseño y evaluación de políticas públicas y gestión pública.</p>
+        <div class="edu-tags"><span>Regulación</span><span>Políticas públicas</span><span>Gestión pública</span></div>
+      </article>
+      <article class="edu-card reveal">
+        <span class="uni">Gestión de infraestructura</span>
+        <h3>Proyectos, control, BIM y contratación pública</h3>
+        <p>Formación complementaria en gestión de proyectos, control gubernamental, BIM, Obras por Impuestos y contratación pública.</p>
+        <div class="edu-tags"><span>Proyectos</span><span>Control</span><span>BIM</span><span>Contratación</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="metodologia">
   <div class="container">
-    <div class="head center reveal"><span class="eyebrow">Metodología</span><h2>De la complejidad a una ruta clara.</h2><p>Un proceso estructurado para avanzar desde el diagnóstico hasta resultados verificables y comunicables.</p></div>
+    <div class="head center reveal"><span class="eyebrow">Enfoque de trabajo</span><h2>De la evidencia a la implementación.</h2><p>Un enfoque que conecta diagnóstico, análisis, diseño de instrumentos, programación y seguimiento de resultados.</p></div>
     <div class="methods">
       <article class="method reveal"><b>01 · COMPRENDER</b><h3>Diagnóstico</h3><p>Contexto, información, normativa, actores y restricciones.</p></article>
       <article class="method reveal"><b>02 · ANALIZAR</b><h3>Evidencia</h3><p>Brechas, causas, riesgos y oportunidades de mejora.</p></article>
@@ -508,8 +603,8 @@ footer{padding:2.5rem 0 1.5rem}
       <div class="formwrap">
         <form class="form" id="contactForm" action="https://formsubmit.co/ssaucedoc@uni.pe" method="POST">
           <span class="eyebrow">Contacto</span>
-          <h2>Cuéntame qué necesitas.</h2>
-          <p>Completa el formulario y la consulta será enviada a mi correo profesional.</p>
+          <h2>Conectemos.</h2>
+          <p>Para intercambiar experiencias, conversar sobre agua y saneamiento o realizar una consulta profesional, puedes escribirme mediante este formulario.</p>
           <input type="hidden" name="_subject" value="Nueva consulta desde la web de Salatiel Saucedo">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
@@ -551,10 +646,10 @@ footer{padding:2.5rem 0 1.5rem}
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="#inicio"><span class="mark">SS</span><span>Salatiel Saucedo<small>Ingeniería · Estrategia · Impacto</small></span></a>
-        <p>Ingeniería sanitaria, planeamiento estratégico, gestión de proyectos, agua potable, saneamiento y transformación digital.</p>
+        <a class="brand" href="#inicio"><span class="mark">SS</span><span>Salatiel Saucedo<small>Ingeniería · Política pública · Datos</small></span></a>
+        <p>Ingeniería sanitaria, planificación y regulación sectorial, inversión pública, proyectos, agua potable, saneamiento, drenaje pluvial y análisis de datos.</p>
       </div>
-      <div class="flinks"><h3>Navegación</h3><a href="#servicios">Servicios</a><a href="#perfil">Perfil</a><a href="#metodologia">Metodología</a></div>
+      <div class="flinks"><h3>Navegación</h3><a href="#servicios">Experiencia</a><a href="#trayectoria">Trayectoria</a><a href="#perfil">Datos</a><a href="#formacion">Formación</a></div>
       <div class="flinks"><h3>Contacto</h3><a href="mailto:ssaucedoc@uni.pe">ssaucedoc@uni.pe</a><a href="https://wa.me/51959432664" target="_blank" rel="noopener">+51 959 432 664</a></div>
     </div>
     <div class="bottom"><span>© <span id="year"></span> Salatiel Saucedo Chacón. Todos los derechos reservados.</span><span>Lima · Perú</span></div>
